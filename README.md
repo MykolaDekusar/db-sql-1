@@ -36,5 +36,13 @@
 
 9. Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo
    degree_id, inserire un valore casuale)
+
+   - INSERT INTO `students` VALUES(NULL, 45, 'Mykola', 'Dekusar', '1997-05-22','DKDMKW12URCIS', '2024-03-16', 485923, 'ciao@gmail.com');
+
 10. Cambiare il numero dell’ufficio del professor Pietro Rizzo in 126
+
+    -UPDATE `teachers` SET `office_number` = 126 WHERE `name` = 'Pietro' AND `surname` = 'Rizzo';
+
 11. Eliminare dalla tabella studenti il record creato precedentemente al punto 9
+
+- DELETE FROM `students` WHERE `name` = 'Mykola' AND `surname` = 'Dekusar';
